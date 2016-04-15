@@ -3,12 +3,14 @@
 ActiveMQ Sample Application
 
 # Developer Workspace
-[![Contribute](http://beta.codenvy.com/factory/resources/codenvy-contribute.svg)](http://beta.codenvy.com/)
+[![Contribute](http://beta.codenvy.com/factory/resources/codenvy-contribute.svg)](http://beta.codenvy.com/f?id=pd06i74cp29xxfnh)
 
 # Custom Stack 
 
 FROM [codenvy/ubuntu_jdk8](https://hub.docker.com/r/codenvy/ubuntu_jdk8/)
+
 RUN cd /home/user && wget -q http://apache.volia.net/activemq/5.13.2/apache-activemq-5.13.2-bin.tar.gz && tar -xvf apache-activemq-5.13.2-bin.tar.gz
+
 EXPOSE 8161
 
 # How to run
